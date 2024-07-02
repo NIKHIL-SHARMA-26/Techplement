@@ -4,7 +4,7 @@ Tech stack - Node.js, Express and mongoDB.<br>
 
 Deploy url - techplement-production-dcc4.up.railway.app<br>
 
-for locak Installation
+for local Installation
 npm install
 start server as
 1) npm run start
