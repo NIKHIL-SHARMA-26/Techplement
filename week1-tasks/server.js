@@ -7,6 +7,7 @@ const app = express()
 const port = process.env.PORT;
 
 app.use(express.json())
+app.use(cors());
 
 const quoteRouter = require('./routes/quote')
 app.use('/api/quote',quoteRouter)
