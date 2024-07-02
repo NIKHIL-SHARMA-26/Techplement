@@ -1,8 +1,8 @@
 Developed an API system that allows users to get a random quote of the day.<br>
 Implement functionalities such as add, update, delete quote by user, Search by name of author<br>
-Tech stack - Node.js, Express and mongoDB.<br><br>
+Tech stack - Node.js, Express and mongoDB.<br>
 
-Deploy url - techplement-production-dcc4.up.railway.app<br><br>
+Deploy url - techplement-production-dcc4.up.railway.app<br>
 
 API Endpoints<br>
 GET /api/quotes<br>
