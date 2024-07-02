@@ -8,6 +8,10 @@ const cors = require('cors');
 const app = express()
 const port = process.env.PORT;
 
+app.get("/", (req, res) => {
+    res.send("Hi, I am live ");
+  });
+
 app.use(cors());
 app.use(express.json())
 
