@@ -8,7 +8,7 @@ const port = process.env.PORT;
 
 app.use(express.json())
 
-const quoteRouter = require('./routes/Quote')
+const quoteRouter = require('./routes/quote')
 app.use('/api/quote',quoteRouter)
 
 connectDB()
