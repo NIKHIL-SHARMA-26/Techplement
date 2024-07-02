@@ -6,7 +6,7 @@ const cors = require('cors');
 
 
 const app = express()
-const port = process.env.PORT;
+const port = 5000;
 
 app.get("/", (req, res) => {
     res.send("Hi, I am live ");
