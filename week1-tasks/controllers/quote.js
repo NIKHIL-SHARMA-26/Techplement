@@ -53,23 +53,23 @@ exports.updateQuote = async (req, res) => {
 
 // Delete quote
 exports.deleteQuote = async (req, res) => {
-     try{
-        const id  = req.params.id;
+    try {
+        const id = req.params.id;
         if (!id) {
-            return res.status(400).json({
+            return res.status(500).json({
                 success: false,
-                message: "invalid ID"
+                message: "Something went wrong or invalid ID"
             })
         }
-        const data = await Quote.findByIdAndDelete({ id })
+        const data = await Quote.findByIdAndDelete(id )
         if (data) {
             res.status(200).json({
                 staus: true,
                 message: "Quote deleted successfully"
             })
         }
-     }catch(err){
-        res.json(`delete unsuccessful ${err}`)
+    } catch (error) {
+        res.json(`delete unsuccessful ${error}`)
     }
 };
 

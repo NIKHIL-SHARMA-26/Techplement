@@ -1,5 +1,5 @@
-const express = require('express')
-const router =  express.Router()
+const express = require('express');
+const router = express.Router();
 const quotesController = require('../controllers/quote');
 
 router.get('/', quotesController.getRandomQuote);
