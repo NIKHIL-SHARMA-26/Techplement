@@ -89,7 +89,6 @@ exports.getRandomQuote = async (req, res) => {
 exports.searchByAuthor = async (req, res) => {
     try {
         const {author} = req.query;
-        console.log(req.query);
         if (!author) {
             return res.status(400).json({
                 success: false,
@@ -105,7 +104,10 @@ exports.searchByAuthor = async (req, res) => {
             })
         }
     }catch(err){
-        console.log(`${err}`);
-        throw err
+        res.status(500).json({
+            success: false,
+            message: "An error occurred while fetching quotes",
+            error: err.message
+        });
     }
 };
