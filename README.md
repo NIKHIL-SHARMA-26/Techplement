@@ -4,6 +4,13 @@ Tech stack - Node.js, Express and mongoDB.<br>
 
 Deploy url - techplement-production-dcc4.up.railway.app<br>
 
+for local Installation
+npm install
+start server as
+1) npm run start
+    or
+2) npm run dev (better to use because of real time update)
+
 API Endpoints<br>
 GET /api/quotes<br>
 Retrieves a random quote from the database.<br>
